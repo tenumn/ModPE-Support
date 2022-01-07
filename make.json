@@ -1,0 +1,43 @@
+{
+	"global": {
+		"info": {
+			"name": "ModPE Support",
+			"description": "Ported ModPE To Horizon.",
+			"author": "Tenumn",
+			"version": "1.0.0",
+			"icon": "src/icon.png"
+		},
+		"api": "CoreEngine"
+	},
+	"make": {
+		"debugAbi": "armeabi-v7a",
+		"abis": [
+			"armeabi-v7a",
+			"x86"
+		],
+		"linkNative": [
+			"minecraftpe",
+			"innercore",
+			"nativejs"
+		],
+		"excludeFromRelease": [],
+		"pushTo": "storage/emulated/0/games/horizon/packs/inner_core/innercore/mods/ModPE",
+		"ndkPath": null
+	},
+	"resources": [],
+	"sources": [
+		{
+			"source": "src/dev",
+			"target": "main.js",
+			"type": "main",
+			"language": "typescript"
+		},
+		{
+			"source": "src/launcher.js",
+			"type": "launcher",
+			"language": "javascript"
+		}
+	],
+	"compile": [],
+	"additional": []
+}
